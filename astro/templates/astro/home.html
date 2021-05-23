@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <style>
+            h1, p, a {
+                text-align: center;
+            }
+            img {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 80%;
+            }
+            .credit {
+                text-align: center;
+                margin-top: 4px;
+                margin-bottom: 4px;
+            }
+            .topnav {
+                overflow: hidden;
+                margin: 0;
+                padding: 0;
+                background-color: #333;
+                width: 100%;
+            }
+            
+            .topnav a {
+                float: right;
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+            .topnav a:hover {
+                background-color: gray;
+            }
+            .bottomnav {
+                margin: 4px;
+                overflow: hidden;
+                background-color: #333;
+                width: 100%;
+                text-align: center; 
+            }
+            
+            .bottomnav a {
+                float: left;
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+            .bottomnav a:hover {
+                background-color: gray;
+            }
+        </style>
+    </head>
+    <body>
+        <div class='topnav'>
+            <a href="{% url 'astro-home' %}">Home</a>
+            <a href="{% url 'astro-form' %}">Form</a>
+            <a href="{% url 'astro-response' %}">Responses</a>
+        </div>
+        <h1>Astronomy Picture of the Day</h1>
+        <p>Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer.</p>
+        <img src="https://apod.nasa.gov/apod/image/2105/MarkariansChainAnvik.jpg" alt="APOD">
+        <div class='credit'>
+            <p><strong>Markarian's Chain</strong></p>
+            <p><strong>Image Credit & Copyright:Ginge Anvik</strong></p>
+            <p><strong>Explanation:</strong>Near the heart of the Virgo Galaxy Cluster the string of galaxies known as Markarian's Chain stretches across this deep telescopic field of view. Anchored in the frame at bottom center by prominent lenticular galaxies, M84 (bottom) and M86, you can follow the chain up and to the right. Near center you'll spot the pair of interacting galaxies NGC 4438 and NGC 4435, known to some as Markarian's Eyes. Its center an estimated 50 million light-years distant, the Virgo Cluster itself is the nearest galaxy cluster. With up to about 2,000 member galaxies, it has a noticeable gravitational influence on our own Local Group of Galaxies. Within the Virgo Cluster at least seven galaxies in Markarian's Chain appear to move coherently, although others may appear to be part of the chain by chance.</p>
+            <p><strong>Tomorrow's picture:</strong> the galaxy tree</p>
+        </div>
+        <div class='bottomnav'>
+            <a href="https://apod.nasa.gov/apod/archivepix.html">Archive</a>
+            <a href="https://apod.nasa.gov/apod/lib/apsubmit2015.html">Submissions</a>
+            <a href="https://apod.nasa.gov/apod/lib/aptree.html">Index</a>
+            <a href="https://antwrp.gsfc.nasa.gov/cgi-bin/apod/apod_search">Search</a>
+            <a href="https://apod.nasa.gov/apod/calendar/allyears.html">Calender</a>
+            <a href="https://apod.nasa.gov/apod.rss">RSS</a>
+            <a href="https://apod.nasa.gov/apod/lib/edlinks.html">Education</a>
+            <a href="https://apod.nasa.gov/apod/lib/about_apod.html">About APOD</a>
+            <a href="http://asterisk.apod.com/discuss_apod.php?date=210522">Discuss</a>
+        </div>
+        <p><strong>Authors & editors:</strong>Robert Nemiroff (MTU) & Jerry Bonnell (UMCP)</p>
+        <p><strong>NASA Official:</strong>Phillip Newman Specific rights apply. </p>
+        <p><a href="https://www.nasa.gov/about/highlights/HP_Privacy.html">NASA Web Privacy Policy and Important Notices</a></p>
+        <p><strong>A service of: </strong> ASD at NASA / GSFC & Michigan Tech. U.</p>
+
+    </body>
+</html>
